@@ -1,2 +1,2 @@
 #!/bin/bash
-docker run -it dappu
+docker run -it -v $PWD:/app dappu
