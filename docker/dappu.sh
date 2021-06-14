@@ -1,2 +1,2 @@
 #!/bin/bash
-docker run -it -v $PWD:/app dappu
+docker run -it -p 3000:3000 -v $PWD:/app dappu
