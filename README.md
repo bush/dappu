@@ -3,10 +3,21 @@
 ## Fix Ganache to start when the host IP address has changed
 rm ~/Library/Application\ Support/Ganache/default/Settings
 
-## Create the network one time
+## Create the blockchain network
+
+This is a one-time operation.
 
 ```
 docker network create blockchain
+```
+
+## Server container
+
+Start the ganache server
+
+```
+$ cd docker
+$ ./start-ganache
 ```
 
 ## Client container
@@ -32,5 +43,3 @@ networks: {
     },
   },
 ```
-
-
