@@ -5,7 +5,7 @@ RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | b
 #RUN . /root/.bashrc && nvm install 10.16.3 && npm config set user 0 && npm config set unsafe-perm true && npm install -g node-gyp@3.6.2 && npm install -g truffle@5.1.39 
 RUN . /root/.bashrc && nvm install 10.16.3 && \
       npm install -g --unsafe-perm=true --allow-root node-gyp@3.6.2 && \
-      npm install -g --unsafe-perm=true --allow-root truffle@5.1.39 && \
+      npm install -g --unsafe-perm=true --allow-root truffle@5.4.3 && \
       npm install -g create-react-app@3.3.1
 RUN mkdir /app
 WORKDIR /app

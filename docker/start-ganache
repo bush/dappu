@@ -1,0 +1,2 @@
+#!/bin/bash
+docker run --rm --publish 8545:8545 --name ganache --network blockchain trufflesuite/ganache-cli:latest --accounts 10 --debug
